@@ -1,0 +1,65 @@
+<h2>Konverterare</h2>
+<p class="center">Skriv in det tal du vill konvertera nedan.</p>
+<div class="convert-container">
+  <div class="convert-div">
+    <form>
+      <label for="fToC">Fahrenheit till Celsius</label>
+      <br />
+      <input
+        type="number"
+        id="fToC"
+        [(ngModel)]="fahrenheitValue"
+        name="fToC"
+      />
+      <br />
+      <input
+        type="submit"
+        class="btn"
+        value="Konvertera"
+        (click)="fahrenheitToCelsius()"
+      />
+      <div id="result1">Resultat: {{ resultOne }}</div>
+    </form>
+    <form>
+      <label for="cToF">Celsius till Fahrenheit</label>
+      <br />
+      <input type="number" id="cToF" [(ngModel)]="celsiusValue" name="cToF" />
+      <br />
+      <input
+        type="submit"
+        class="btn"
+        value="Konvertera"
+        (click)="celsiusToFahrenheit()"
+      />
+      <div id="result2">Resultat: {{ resultTwo }}</div>
+    </form>
+  </div>
+  <div class="convert-div">
+    <form>
+      <label for="mToF">Meter till feet</label>
+      <br />
+      <input type="number" id="mToF" [(ngModel)]="meterValue" name="mToF" />
+      <br />
+      <input
+        type="submit"
+        class="btn"
+        value="Konvertera"
+        (click)="meterToFeet()"
+      />
+      <div id="result3">Resultat: {{ resultThree }}</div>
+    </form>
+    <form>
+      <label for="fToM">Feet till meter</label>
+      <br />
+      <input type="number" id="fToM" [(ngModel)]="feetValue" name="fToM" />
+      <br />
+      <input
+        type="submit"
+        class="btn"
+        value="Konvertera"
+        (click)="feetToMeter()"
+      />
+      <div id="result4">Resultat: {{ resultFour }}</div>
+    </form>
+  </div>
+</div>

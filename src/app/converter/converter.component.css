@@ -1,0 +1,35 @@
+.convert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.convert-div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-top: 50px;
+  background-color: rgb(88, 135, 177);
+  padding: 0.5rem;
+  border-radius: 4px;
+  min-height: 130px;
+  width: 70%;
+  height: auto;
+}
+.center {
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  .convert-div {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .center {
+    font-size: 0.7rem;
+  }
+  .convert-container {
+    width: 100%;
+  }
+}

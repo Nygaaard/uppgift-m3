@@ -1,0 +1,15 @@
+.about-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.about-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 700px) {
+  .about-container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,15 @@
+.image {
+  width: 100%;
+  height: auto;
+}
+.mid {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0.4rem;
+}
+
+@media all and (max-width: 600px) {
+  .mid {
+    font-size: 0.7rem;
+  }
+}
